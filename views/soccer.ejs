@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+<body>
+
+    <%- include('./partials/nav.ejs') %> 
+
+    <h3>News Trending</h3>
+    <ul>
+        <% news.forEach(function(t) { %>
+        <li>
+            <%= t.news %>
+        </li>
+        <% }) %>
+    </ul>
+
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+
+</html>
