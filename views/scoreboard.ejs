@@ -6,19 +6,20 @@
 
     <%- include('./partials/nav.ejs') %>
 
-    <h1>Scoreboard</h1>
-
-    <ul>
-        <% scores.forEach(function(t) { %>
-        <li>
-            <%= t.scores %>
-        </li>
-        <% }) %>
-    </ul>
-
-    <ul>
-        <a href="/soccer">Go Back</a>
-    </ul>
+    <div id="score">
+        <h1>Scoreboard</h1>
+        <ul>
+            <% scores.forEach(function(t) { %>
+            <li>
+                <%= t.scores %>
+            </li>
+            <% }) %>
+        </ul>
+    
+        <ul>
+            <a href="/soccer">Go Back</a>
+        </ul>
+    </div>
 
     <%- include('./partials/footer.ejs') %>
 

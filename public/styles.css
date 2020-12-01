@@ -5,3 +5,12 @@ div.site-title {
 /* h1 {
     background-color: white;
 } */
+
+/* body {
+    background-image: linear-gradient(to bottom, #010b1a, #004462, #008387, #00c270, #acf705);
+    height: 100vh;
+} */
+
+#copy {
+    text-align: center;
+}
