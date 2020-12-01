@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %> 
+<%- include('./partials/head.ejs') %>
+
 <body>
+
+    <%- include('./partials/nav.ejs') %>
+
     <h1>Scoreboard</h1>
 
     <ul>
         <% scores.forEach(function(t) { %>
-            <li>
-                <%= t.scores %> 
-            </li> 
-        <% }) %> 
+        <li>
+            <%= t.scores %>
+        </li>
+        <% }) %>
     </ul>
 
     <ul>
         <a href="/soccer">Go Back</a>
     </ul>
 
-    <%- include('./partials/footer.ejs') %> 
+    <%- include('./partials/footer.ejs') %>
 
 </body>
+
 </html>

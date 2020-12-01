@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %> 
+<%- include('./partials/head.ejs') %>
+
 <body>
+
+    <%- include('./partials/nav.ejs') %>
+
     <h1>Standings</h1>
 
     <ul>
         <h4>Premier League</h4>
         <% standings.forEach(function(t) { %>
-                <%= t.PremierLeague %>
-        <% }) %> 
+        <%= t.PremierLeague %>
+        <% }) %>
     </ul>
 
     <ul>
         <h4>La Liga</h4>
-        <% standings.forEach(function(t) { %>                  
-                <%= t.LaLiga %>      
-        <% }) %> 
+        <% standings.forEach(function(t) { %>
+        <%= t.LaLiga %>
+        <% }) %>
     </ul>
 
     <ul>
         <a href="/">Go Back</a>
     </ul>
 
-    <%- include('./partials/footer.ejs') %> 
+    <%- include('./partials/footer.ejs') %>
 
 </body>
+
 </html>

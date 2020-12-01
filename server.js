@@ -14,7 +14,7 @@ const app = express();
     app.set('views', path.join(__dirname, 'views'))
 	
 // Mount middleware (app.use)
-	
+app.use(express.static(path.join(__dirname, 'public')));
 	
 // Mount routes
 
